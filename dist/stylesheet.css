@@ -1,0 +1,110 @@
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Helvetica, sans-serif;
+    position: relative;
+    height: 100vh;
+}
+
+nav {
+    background-color: black;
+    height: 10vh;
+}
+
+ul {
+    margin: 0;
+    list-style: none;
+    padding-inline-start: 0;
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid lightgrey;
+    padding: 10px;
+    width: 90%;
+    left: 4%;
+    position: absolute;
+    top: 30px;
+    background: black;
+}
+
+nav li {
+    cursor: pointer;
+    color: lightgrey;
+}
+
+#home-container {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/6/62/Barbieri_-_ViaSophia25668.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;  
+    height: 90vh;
+}
+
+h1 {
+    margin: 0;
+}
+
+.black-div {
+    background: black;
+    padding: 10px;
+}
+
+#home-showcase-container .black-div h1 {
+    font-family: serif; 
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#home-showcase-container .black-div p {
+    font-style: italic;
+    color: beige;
+}
+
+#home-showcase-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    padding: 50px;
+    grid-gap: 20px;
+    height: 50%;
+    align-content: center;
+}
+
+#misc-info-divider {
+    display: grid;
+    grid-template-columns: 2fr 1fr;  
+    grid-gap: 20px;
+}
+
+#home-misc-info {
+    width: 90%;
+    margin: auto;
+    height: 24.5%;
+    padding: 20px;
+}
+
+#home-misc-info h1 {
+    text-transform: uppercase;
+    color: tomato;
+    font-family: sans-serif;
+}
+
+#home-misc-info  p{
+    color: white
+}
+
+#order-btn {
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    background: tomato;
+    height: 70px;
+    border: 0;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
